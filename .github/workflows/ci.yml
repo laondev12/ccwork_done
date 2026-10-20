@@ -23,6 +23,8 @@ jobs:
 
       - run: npx tsc --noEmit
 
+      - run: sleep 240
+
       - run: npm audit --audit-level=moderate
 
       - run: npm test
